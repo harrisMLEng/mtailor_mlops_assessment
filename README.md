@@ -12,17 +12,25 @@
 $ python -m venv mtailor
 $ source mtailor/bin/activate 
 ```
+<b>3. Download Model weights into models/ directory</b>
 
+```
+https://www.dropbox.com/s/b7641ryzmkceoc9/pytorch_model_weights.pth?dl=0
+```
 
 ## Development Environment Setup
 
-<b>5. Install required dependencies</b>
+<b>4. Install required dependencies</b>
 
 ``` 
 pip install -r requirements.txt
 ```
 
+<b>5. Convert Pytorch model to Onnx</b>
 
+```
+python src/utils/convert_to_onnx.py
+```
 
 <b>6. Running tests</b>
 
