@@ -1,7 +1,7 @@
 from utils.model import Onnxmodel
 
 
-def init(model_name : str = "./models/pytorch_onnx.onnx"):
+def init(model_name : str = "./models/onnx_pytorch.onnx"):
     global onnx 
     onnx = Onnxmodel(model_name)
 
