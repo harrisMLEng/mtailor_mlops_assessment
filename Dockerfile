@@ -1,5 +1,5 @@
 # Must use a Cuda version 11+
-FROM pytorch/pytorch:1.11.0-cuda11.3-cudnn8-runtime
+FROM python:3.9-slim
 
 WORKDIR /
 
@@ -17,7 +17,6 @@ ADD ./src/server.py .
 # Add your model weight files 
 # (in this case we have a python script)
 ADD ./models/onnx_pytorch.onnx ./src
-RUN python3 download.py
 
 
 # Add your custom app code, init() and inference()
